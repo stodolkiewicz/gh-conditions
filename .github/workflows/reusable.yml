@@ -14,5 +14,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.artifact-name }} # dist-files
+      - name: lsit files
+        run: ls
       - name: output information
         run: echo "Deploying & uploading ..."
